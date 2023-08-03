@@ -19,8 +19,10 @@ export default function Login() {
         } )
             .then( r => {
                 if( r.ok ){
+                    // we could totally put the user in state!
                     r.json().then( console.log )
                 } else {
+                    // we could totally but any error message in state!
                     console.error( 'OH NO ALL BAD!' )
                     console.error( 'POST /login status:', r.status )
                     r.text().then( console.warn )

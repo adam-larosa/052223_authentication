@@ -1,5 +1,5 @@
 export default function NotFound() {
     return (
-        <h1>root landing</h1>
+        <h1>404 not found</h1>
     )
 }
