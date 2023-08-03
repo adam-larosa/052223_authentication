@@ -24,7 +24,7 @@ def login():
 
 @app.errorhandler( NotFound )
 def not_found( e ):
-    return { 'error': str( e ) }
+    return { 'error': 'look elsewhere for thy backend route! ' + str( e ) }
 
 
 if __name__ == '__main__':
