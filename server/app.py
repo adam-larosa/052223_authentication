@@ -24,7 +24,7 @@ def login():
 
 @app.errorhandler( NotFound )
 def not_found( e ):
-    return { 'error': 'route not found' }
+    return { 'error': str( e ) }
 
 
 if __name__ == '__main__':
